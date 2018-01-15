@@ -1,5 +1,5 @@
 # ttos0700-peliohjelmointi-phaserjs-tatupaaj
 
-Oppilas: Tatu
+Tatu Paajanen
 
 Tänne tulee TToS0700 Peliohjelmointi kurssin harkat
