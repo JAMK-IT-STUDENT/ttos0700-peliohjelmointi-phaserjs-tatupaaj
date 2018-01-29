@@ -5,9 +5,9 @@ var cursors, vel = 500, rocks, grass;
 
 demo.state1.prototype = {
     preload: function (){
-        game.load.tilemap('field', 'assets/tilemaps/tileset.json', null, Phaser.Tilemap.TILED_JSON);
-        game.load.image('grassTiles', 'assets/tilemaps/grassfiles.png')
-        game.load.image('rockTiles', 'assets/tilemaps/rockfiles.png')
+        game.load.tilemap('field', 'assets/tilemaps/field.json', null, Phaser.Tilemap.TILED_JSON);
+        game.load.image('grassTiles', 'assets/tilemaps/grassTiles.png')
+        game.load.image('rockTiles', 'assets/tilemaps/rockTiles.png')
         game.load.image('dragon', 'assets/sprites/000.png')
     },
     create: function(){
@@ -22,8 +22,8 @@ demo.state1.prototype = {
         grass = map.createLayer('grass');
         rocks = map.createLayer('rocks');
         
-        map.setCollisionBetween(1, 9, true, 'rocks');
-        map.setCollision(11, true, 'grass');
+        map.setCollisionBetween(1, 9, true, 'grass');
+        map.setCollision(10, true, 'rocks');
         
         dragon = game.add.sprite(200,200,'dragon');
         dragon.scale.setTo(2.3, 2.3);
